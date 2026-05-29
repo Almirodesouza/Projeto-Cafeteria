@@ -1,8 +1,17 @@
+:root {
+    font-size: 10px;
+    --main-color: #d3ad7f;
+    --bleck: #131313;
+    --bg: #010103;
+    --border: 0.1px solid rgba(255, 255, 255, 0.3);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    text-decoration:none
 }
 
 .cafe-video {
@@ -20,3 +29,98 @@
     top: 0;
     left: 0;
 }
+
+.mascara-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color:var(--bg);
+    border-bottom: var(--border);
+    width: 100vw;
+}
+
+header section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+header section a img {
+    height: 6rem;
+}
+
+header section nav a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+
+header section nav a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main div{
+    max-width: 60rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+main div h1{
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+main div p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+main div a{
+    background-color: var(--main-color);
+    cursor: pointer;
+    margin-top: 2rem;
+    display: inline-block;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    border:none;
+    transition: 0.4s linear;
+}
+
+main div a:hover{
+    letter-spacing: 0.1rem;
+}
+
