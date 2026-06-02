@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    text-decoration:none
+    text-decoration: none
 }
 
 .cafe-video {
@@ -38,7 +38,7 @@
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
-section{
+section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
@@ -49,7 +49,7 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
-    background-color:var(--bg);
+    background-color: var(--bg);
     border-bottom: var(--border);
     width: 100vw;
 }
@@ -81,25 +81,25 @@ header section nav a:hover {
     padding-bottom: 0.5rem;
 }
 
-main{
+main {
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-main div{
+main div {
     max-width: 60rem;
     margin-left: 10rem;
     margin-top: 10rem;
 }
 
-main div h1{
+main div h1 {
     font-size: 6rem;
     color: #fff;
     text-transform: uppercase;
 }
 
-main div p{
+main div p {
     font-size: 2rem;
     color: #fff;
     font-weight: lighter;
@@ -107,7 +107,7 @@ main div p{
     line-height: 1.8;
 }
 
-main div a{
+.btn {
     background-color: var(--main-color);
     cursor: pointer;
     margin-top: 2rem;
@@ -116,11 +116,90 @@ main div a{
     padding: 1rem 3rem;
     font-size: 1.8rem;
     border-radius: 1rem;
-    border:none;
+    border: none;
     transition: 0.4s linear;
 }
 
-main div a:hover{
+.btn:hover {
     letter-spacing: 0.1rem;
 }
 
+.sobre-nos h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.sobre-nos h2 span {
+    color: var(--main-color);
+}
+
+.sobre-nos .container-sobre-nos {
+    display: flex;
+    align-items: center;
+    background-color: var(--bleck);
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.sobre-nos .container-sobre-nos .img-sobre-nos {
+    flex: 1 1 45rem;
+}
+
+.sobre-nos .container-sobre-nos .img-sobre-nos img {
+    width: 100%;
+}
+
+.sobre-nos .container-sobre-nos .text-sobre-nos {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.sobre-nos .container-sobre-nos .text-sobre-nos h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.sobre-nos .container-sobre-nos .text-sobre-nos p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    z-index: 4;
+    position: fixed;
+    top: 52%;
+    left: -23%;
+    transform: translate(-50%, -50%);
+    transition: left 1s linear;
+}
+
+.modal h3 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.modal h3 span {
+    color: var(--main-color);
+}
+
+.mascara-modal {
+    visibility: hidden;
+    Z-index: 3;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
